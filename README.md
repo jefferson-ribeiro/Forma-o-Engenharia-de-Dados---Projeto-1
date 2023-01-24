@@ -12,12 +12,16 @@ Esta disponivel neste repositorio os arquivos necessário para contrução de um
 Etapas:
 
 1. Criar Cluster Redshift
-2. Criar banco de dados Northwind (arquivos disponiveis no repositório)
-3. Criar estrutura do Banco de Dados:
 
-a) Utilizar comandos conforme northwind.sql utilizando editor de consultas no Redshift
+2. Criar database Northwind
+
+`create database northwind;`
+
+3. Criar estrutura e tabelas no database (arquivo disponivel no repositório):
+
+a) Conforme northwind.sql utilizando editor de consultas no Redshift
   
-4. Popular das tabelas na AWS conforme arquivos disponibilizados
+4. Popular das tabelas na AWS conforme arquivos (csv) disponibilizados na pasta tables
 
 a) Criar credenciais
 
@@ -26,10 +30,16 @@ b) Criar um Bucket e fazer upload dos arquivos csv
 c) Executar copy para popular em cada tabela utilizando comandos no editor de consultas Redshift:
 
 d) Modelo do camando copy:
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
-XXXXXXXXXXXXXXXXXXXXXXXXXXXXX
 
-5. Segue shema que vamos utilizar
-IMAGEM
+`copy categories`  
+`from 's3://project1-northwind/categories.csv'`  
+`CREDENTIALS 'aws_access_key_id=AKIAY7UDVCNPARKWP6EI;aws_secret_access_key=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'`  
+`delimiter ';'`   
+`region 'us-east-1'`  
+`IGNOREHEADER 1`  
+`DATEFORMAT AS 'YYYY-MM-DD HH:MI:SS'`  
+`removequotes;`  
+
+5. Seguir shema que vamos utilizar
+
   
