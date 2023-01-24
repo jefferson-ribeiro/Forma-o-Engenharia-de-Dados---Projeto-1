@@ -33,7 +33,7 @@ d) Modelo do camando copy:
 
 `copy categories`  
 `from 's3://project1-northwind/categories.csv'`  
-`CREDENTIALS 'aws_access_key_id=AKIAY7UDVCNPARKWP6EI;aws_secret_access_key=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'`  
+`CREDENTIALS 'aws_access_key_id=xxxxxxxxxxxxxxxxxxxx;aws_secret_access_key=xxxxxxxxxxxxxxxxxxxxxxx'`  
 `delimiter ';'`   
 `region 'us-east-1'`  
 `IGNOREHEADER 1`  
