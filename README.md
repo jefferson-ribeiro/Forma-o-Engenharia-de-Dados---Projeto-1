@@ -42,4 +42,6 @@ d) Modelo do camando copy:
 
 5. Seguir shema que vamos utilizar
 
+![image](https://user-images.githubusercontent.com/74573131/214297254-8725ec1b-88db-4648-88b6-36eb887eb155.png)
+
   
